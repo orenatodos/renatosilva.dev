@@ -1,0 +1,33 @@
+---
+import '@fontsource/geist-mono'
+import '@fontsource/geist-sans'
+
+type Props = {
+	title: string
+}
+
+const { title } = Astro.props
+---
+
+<html lang="pt-BR" class="scrollbar-thin scrollbar-track-zinc-950 scrollbar-thumb-zinc-900">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content={new URL('https://orenatodos.dev/', Astro.site)} />
+    <meta property="og:site_name" content="Renato Silva" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href={new URL('https://orenatodos.dev/', Astro.site)}>
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body class="bg-zinc-950 text-zinc-50 antialiased overflow-x-hidden min-h-screen">
+    <div class="container">
+      <slot />
+    </div>
+  </body>
+</html>

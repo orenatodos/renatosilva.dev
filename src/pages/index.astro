@@ -1,0 +1,68 @@
+---
+import Layout from '../layout.astro'
+
+import { AnimatedSection } from '../components/AnimatedSection'
+import { ProjectsBoard } from '../components/ProjectsBoard'
+---
+
+<Layout title="Renato Silva - Software Engineer & Freelancer">
+  <div class="space-y-10 py-16">
+    <AnimatedSection client:load>
+      <section class="space-y-8">
+        <h2 class="font-mono uppercase text-sm tracking-widest text-zinc-500 block">Resumo</h2>
+
+        <h1 class="text-zinc-50 font-semibold tracking-tight">Olá, eu sou Renato Silva</h1>
+
+        <div class="text-zinc-400 leading-relaxed space-y-6">
+          <p>Nascido e criado na cidade de <span class="text-zinc-50">São Paulo</span>, atualmente trabalho como <span class="text-zinc-50">Software Engineer</span> na Escale. Meu primeiro contato com a programação aconteceu ainda na infância, através da plataforma <a href="https://www.blogger.com/" rel="noopener noreferrer" class="text-zinc-50">Blogger</a> onde me divertia customizando os estilos dos templates de sites usando o código fonte disponível no painel da plataforma.</p>
+          <p>Hoje, aos 23 anos, tenho quatro anos de experiência em programação web. Além de trabalhar em projetos na empresa onde estou atualmente, também atuo como freelancer, com foco principal em desenvolvimento <span class="text-zinc-50">Front End</span>. Ocasionalmente, também desempenho funções mais voltadas para o <span class="text-zinc-50">Full Stack</span>.</p>
+        </div>
+      </section>
+    </AnimatedSection>
+
+    <AnimatedSection client:load>
+      <section class="pt-16 space-y-8">
+        <h2 class="font-mono uppercase text-sm tracking-widest text-zinc-500 block">Projetos</h2>
+
+        <div>
+          <ProjectsBoard client:load />
+        </div>
+      </section>
+    </AnimatedSection>
+
+    <AnimatedSection client:load>
+      <section class="pt-16 space-y-8">
+        <h2 class="font-mono uppercase text-sm tracking-widest text-zinc-500 block">Experiência</h2>
+
+        <div class="space-y-8">
+          <div class="space-y-2">
+            <h3 class="text-zinc-50 font-medium tracking-tight">Software Engineer</h3>
+            <p class="text-zinc-400 leading-relaxed">
+              <a href="https://escale.com.br/" target="_blank" rel="noopener noreferrer" class="text-zinc-100 border-b border-zinc-500">Escale</a>
+              •
+              Remoto
+            </p>
+            <time datetime="" class="block text-zinc-400 leading-relaxed">Ago 2021 – Até o momento • 3 anos</time>
+          </div>
+          <div class="space-y-2">
+            <h3 class="text-zinc-50 font-medium tracking-tight">Full-Stack Developer</h3>
+            <p class="text-zinc-400 leading-relaxed">
+              <a href="https://maktub.tech/" target="_blank" rel="noopener noreferrer" class="text-zinc-100 border-b border-zinc-500">Maktub Tech</a>
+              •
+              Presencial
+            </p>
+            <time datetime="" class="block text-zinc-400 leading-relaxed">Fev 2021 – Ago 2021 • 7 meses</time>
+          </div>
+        </div>
+      </section>
+    </AnimatedSection>
+
+    <AnimatedSection client:load>
+      <section class="pt-16 space-y-8">
+        <h2 class="font-mono uppercase text-sm tracking-widest text-zinc-500 block">Conecte-se</h2>
+
+        <p class="text-zinc-400 leading-relaxed">Você pode entrar em contato comigo via <a href="https://www.linkedin.com/in/orenatodos/" target="_blank" rel="noopener noreferrer" class="border-b border-zinc-600 hover:border-b-zinc-400 transition-colors">LinkedIn</a> e <a href="mailto:orenatodos@gmail.com?subject=Olá" class="border-b border-zinc-600 hover:border-b-zinc-400 transition-colors">E-mail</a> ou ver meus projetos no <a href="https://github.com/orenatodos/" target="_blank" rel="noopener noreferrer" class="border-b border-zinc-600 hover:border-b-zinc-400 transition-colors">GitHub</a>.</p>
+      </section>
+    </AnimatedSection>
+  </div>
+</Layout>
