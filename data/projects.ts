@@ -26,7 +26,7 @@ export const projects: Project[] = [
 		name: 'MyContacts',
 		excerpt:
 			'Aplicação para gerenciamento de pedidos de um estabelecimento. Por intermédio dele, os garçons e a cozinha estão mais conectados do que nunca.',
-		url: 'https://mycontacts.renatosilva.dev/',
+		url: '#',
 		stacks: ['React.js', 'React Native', 'Express.js'],
 		category: 'Cursos'
 	},
@@ -39,19 +39,9 @@ export const projects: Project[] = [
 		category: 'Pessoais'
 	},
 	{
-		id: 4,
-		name: '5Era',
-		excerpt:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-		url: 'https://5era.com/',
-		stacks: ['Next.js', 'Prismic CMS', 'Tailwind'],
-		category: 'Freelas'
-	},
-	{
 		id: 5,
 		name: 'Sergio Rio',
-		excerpt:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+		excerpt: 'Site pessoal do Sergio Rio.',
 		url: 'https://sergiorio.tech/pt-br',
 		stacks: ['Next.js', 'Prismic CMS', 'Tailwind'],
 		category: 'Freelas'
@@ -60,43 +50,39 @@ export const projects: Project[] = [
 		id: 6,
 		name: 'Plann.er',
 		excerpt: 'Aplicação para planejamento de viagens.',
-		url: 'https://sergiorio.tech/pt-br',
+		url: '#',
 		stacks: ['React.js', 'Tailwind'],
 		category: 'Cursos'
 	},
 	{
 		id: 7,
 		name: 'Pizza.shop',
-		excerpt:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-		url: 'https://sergiorio.tech/pt-br',
+		excerpt: 'Gestão de pedidos de estabelecimento.',
+		url: '#',
 		stacks: ['Next.js', 'Tailwind'],
 		category: 'Cursos'
 	},
 	{
 		id: 8,
 		name: 'Ignews',
-		excerpt:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-		url: 'https://sergiorio.tech/pt-br',
+		excerpt: 'Blog com acesso a conteúdos por assinatura.',
+		url: '#',
 		stacks: ['Next.js', 'Prismic CMS'],
 		category: 'Cursos'
 	},
 	{
 		id: 9,
 		name: 'WaiterApp',
-		excerpt:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-		url: 'https://sergiorio.tech/pt-br',
+		excerpt: 'Gestão de pedidos de estabelecimento.',
+		url: '#',
 		stacks: ['React.js', 'React Native', 'Express.js'],
 		category: 'Cursos'
 	},
 	{
 		id: 10,
 		name: 'Next SaaS RBAC',
-		excerpt:
-			'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-		url: 'https://sergiorio.tech/pt-br',
+		excerpt: '',
+		url: '#',
 		stacks: ['Next.js', 'Fastify', 'CASL'],
 		category: 'Cursos'
 	}

@@ -47,51 +47,55 @@ export function ProjectsBoard() {
 						{projects
 							.filter((project) => project.category === category)
 							.map((project) => (
-								<article
+								<a
 									key={project.id}
-									className="bg-zinc-950 p-5 flex gap-5 cursor-pointer"
+									href={project.url}
+									target="_blank"
+									rel="noreferrer"
 								>
-									<div className="space-y-4 flex-1">
-										<div className="flex items-center gap-4 flex-wrap">
-											<h3 className="text-zinc-50 font-semibold tracking-tight">
-												{project.name}
-											</h3>
-											<ul className="flex items-center gap-2 flex-wrap">
-												{project.stacks.map((stack) => (
-													<li
-														key={stack}
-														className={clsx(
-															'text-xs bg-zinc-800 px-2 py-1.5 rounded-2xl font-semibold',
-															stack.toLowerCase().includes('react') &&
-																'text-cyan-400 !bg-cyan-950',
-															stack.toLowerCase().includes('node.js') &&
-																'text-green-400 !bg-green-950',
-															stack.toLowerCase().includes('express') &&
-																'text-green-400 !bg-green-950',
-															stack.toLowerCase().includes('mongo') &&
-																'text-green-400 !bg-green-950',
-															stack.toLowerCase().includes('fastify') &&
-																'text-green-400 !bg-green-950',
-															stack.toLowerCase().includes('nest.js') &&
-																'text-green-400 !bg-green-950',
-															stack.toLowerCase().includes('tailwind') &&
-																'text-sky-400 !bg-sky-950',
-															stack.toLowerCase().includes('astro') &&
-																'text-amber-400 !bg-amber-950',
-															stack.toLowerCase().includes('next') &&
-																'text-zinc-950 !bg-zinc-50'
-														)}
-													>
-														{stack}
-													</li>
-												))}
-											</ul>
+									<article className="bg-zinc-950 p-5 flex gap-5 cursor-pointer">
+										<div className="space-y-4 flex-1">
+											<div className="flex items-center gap-4 flex-wrap">
+												<h3 className="text-zinc-50 font-semibold tracking-tight">
+													{project.name}
+												</h3>
+												<ul className="flex items-center gap-2 flex-wrap">
+													{project.stacks.map((stack) => (
+														<li
+															key={stack}
+															className={clsx(
+																'text-xs bg-zinc-800 px-2 py-1.5 rounded-2xl font-semibold',
+																stack.toLowerCase().includes('react') &&
+																	'text-cyan-400 !bg-cyan-950',
+																stack.toLowerCase().includes('node.js') &&
+																	'text-green-400 !bg-green-950',
+																stack.toLowerCase().includes('express') &&
+																	'text-green-400 !bg-green-950',
+																stack.toLowerCase().includes('mongo') &&
+																	'text-green-400 !bg-green-950',
+																stack.toLowerCase().includes('fastify') &&
+																	'text-green-400 !bg-green-950',
+																stack.toLowerCase().includes('nest.js') &&
+																	'text-green-400 !bg-green-950',
+																stack.toLowerCase().includes('tailwind') &&
+																	'text-sky-400 !bg-sky-950',
+																stack.toLowerCase().includes('astro') &&
+																	'text-amber-400 !bg-amber-950',
+																stack.toLowerCase().includes('next') &&
+																	'text-zinc-950 !bg-zinc-50'
+															)}
+														>
+															{stack}
+														</li>
+													))}
+												</ul>
+											</div>
+											<p className="text-zinc-400 leading-relaxed max-w-lg">
+												{project.excerpt}
+											</p>
 										</div>
-										<p className="text-zinc-400 leading-relaxed max-w-lg">
-											{project.excerpt}
-										</p>
-									</div>
-								</article>
+									</article>
+								</a>
 							))}
 					</RadixTabsContent>
 				))}
