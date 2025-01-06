@@ -6,7 +6,8 @@
   "files": {
     "ignore": [
       "./node_modules",
-      "./.next"
+      "./.next",
+      "./src/components/SplashCursor.tsx"
     ]
   },
   "javascript": {
@@ -21,7 +22,10 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "style": {
+        "noParameterAssign": "off"
+      }
     }
   }
 }

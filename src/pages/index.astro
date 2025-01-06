@@ -3,9 +3,12 @@ import Layout from '../layout.astro'
 
 import { AnimatedSection } from '../components/AnimatedSection'
 import { ProjectsBoard } from '../components/ProjectsBoard'
+import { SplashCursor } from '../components/SplashCursor'
 ---
 
 <Layout title="Renato Silva - Software Engineer & Freelancer">
+  <SplashCursor client:load />
+
   <div class="space-y-10 py-16">
     <AnimatedSection client:load>
       <section class="space-y-8">
