@@ -4,10 +4,21 @@ import Layout from '../layout.astro'
 import { AnimatedSection } from '../components/AnimatedSection'
 import { ProjectsBoard } from '../components/ProjectsBoard'
 import { SplashCursor } from '../components/SplashCursor'
+import { SquaresBackground } from '../components/SquaresBackground'
 ---
 
 <Layout title="Renato Silva - Software Engineer & Freelancer">
   <SplashCursor client:load />
+  <div class="fixed inset-0 -z-40">
+    <SquaresBackground
+      client:load
+      speed={0.5}
+      squareSize={40}
+      direction='diagonal'
+      borderColor='#18181b'
+      hoverFillColor='#18181b'
+    />
+  </div>
 
   <div class="space-y-10 py-16">
     <AnimatedSection client:load>
